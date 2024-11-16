@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>chci_vedet_vic</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" media="screen and (min-width: 1100px)" href="css/widescreen.css" />
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css" />
+    
+</head>
+<body>
+    <nav id="navbar" class="navbar">
+        <div class="logo">
+            <i class="fa-regular fa-clock"> LUX Hodinky</i>
+        </div>
+        <ul>
+        <li><a href="index.html">Domů</a></li>
+        <li><a href="chci_vedet_vic.html">Formulář</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+
+    </nav>
+
+    <h2 id="nadpis_form">Objednávka hodinek</h2>
+
+<form action="" method="">
+    <label for="name">Jméno:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="model">Model Hodinek:</label>
+    <input type="text" id="input" name="model" >
+
+    <label for="znacka">Značka Hodinek</label>
+    <select id="model" name="model" required>
+        <option value="">Vyberte model</option>
+        <option value="Patek Philippe">Patek Philippe</option>
+        <option value="Audemars Piguet">Audemars Piguet</option>
+        <option value="Rolex">Rolex</option>
+        <option value="Tissot">Tissot</option>
+        <option value="Omega">Omega</option>
+    </select>
+
+    <label for="quantity">Množství:</label>
+    <input type="number" id="quantity" name="quantity" min="1" max="10" value="1" required>
+
+    <label for="notes">Poznámky:</label>
+    <textarea id="notes" name="notes" rows="4" placeholder="Zadejte případné poznámky..."></textarea>
+
+    <button type="submit">Odeslat objednávku</button>
+</form>
+
+
+
+
+</body>
+</html>
